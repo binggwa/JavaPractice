@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package com.lq.exercises;
+
+/**
+ * 
+ */
+public class Lab3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+		String[] monthNames = {"January", "Feburary", "March", "April", "May",
+				"July", "June", "August", "September", "October", 
+				"November", "December"};
+		
+		System.out.println("start of output for exercise 1: standard loop");
+		for(int i=0; i<7; i++) {
+			System.out.println(daysOfWeek[i]);
+		}
+		
+		System.out.println("start of output for exercise 1: reverse loop");
+		for(int j=6; j>=0; j--) {
+			System.out.println(daysOfWeek[j]);
+		}
+		
+		System.out.println("\nstart of output for exercise 2: standard loop");
+		int count = 1;
+		while(count++ < 20) {
+			if(count%2 == 1) {
+				continue;
+				}
+			System.out.print(count + " ");
+		}
+		
+		for(int x=1; x<=100; x++) {
+			if( (x>=50) && (x<=60) ) {
+				continue;
+			}
+			System.out.print(x + " ");
+		}
+		
+		
+		
+	}
+}

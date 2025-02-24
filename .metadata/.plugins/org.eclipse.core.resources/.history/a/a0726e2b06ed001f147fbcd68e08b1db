@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.lq.exercises;
+
+/**
+ * 
+ */
+public class Lab2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+
+	}
+
+}
