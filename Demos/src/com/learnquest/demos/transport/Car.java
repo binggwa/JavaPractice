@@ -1,4 +1,4 @@
-package com.learnquest.demos;
+package com.learnquest.demos.transport;
 
 /**
  * CoreJava 강의 Java를 사용하는 객체 지향 프로그래밍 소개
@@ -39,8 +39,9 @@ public class Car {
 	}
 	/**
 	 * static, 정적 키워드에 관해 학습함
+	 * 25.03.05 StationWagon과 SportsCar 클래스를 이용한 상속개념 학습을 위한 MAX_SPEED 한도 변경
 	 */
-	private static final int MAX_SPEED = 100;
+	private static final int MAX_SPEED = 350;
 		
 	private String name;
 
@@ -123,37 +124,4 @@ public class Car {
 	public int getAge() {
 		return Period.between(getManufactured(), LocalDate.now()).getYears();
 	}
-
-	/**
-	 * main method 시작
-	 * 
-	 * Car 클래스에 대한 인스턴스 car54와 mach5를 만들어 이름, 속도, 제조일자를 설정한다.
-	 * 
-	 * 이후 Car에 대한 일시적인 배열을 만들어 printf 구문을 통해 %s로 string name을, %d로 int age를, %d로 int
-	 * speed를 출력하는 방법에 대해 배운다.
-	 */
-	public static void main(String[] args) {
-		Car car54 = new Car();
-
-		car54.setName("Car 54");
-		car54.setSpeed(20);
-		car54.setManufactured(LocalDate.of(1961, 9, 17));
-
-		Car mach5 = new Car();
-
-		mach5.setName("Mach V");
-		mach5.setSpeed(250);
-		mach5.setManufactured(LocalDate.of(1967, 4, 2));
-
-		for (Car car : new Car[] { car54, mach5 }) {
-			System.out.printf("%s is %d years old and is traveling at %d mph%n", car.getName(), car.getAge(), car.getSpeed());
-		}
-		/**
-		 * 생성자 학습 후, 새로운 인스턴스 형성 시 생성자의 형태로 만들어보는 것을 학습함
-		 */
-		Car boost1 = new Car("Boost 1", 500, 100, true);
-		boost1.setManufactured(LocalDate.of(2025, 02, 26));
-
-	}
-
 }
