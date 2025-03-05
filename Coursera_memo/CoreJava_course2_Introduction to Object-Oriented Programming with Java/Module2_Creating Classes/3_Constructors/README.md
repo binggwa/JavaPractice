@@ -21,6 +21,7 @@ new, 생성자이름(=클래스이름) 다음은 생성자의 매개변수 목�
 일단 다른 생성자를 제공하고 나면, 더 이상 기본적으로 인수 생성자가 생성되지 않는다.
 
 ex)
+```java
 public class Car {
 
 	private int speed;
@@ -32,9 +33,9 @@ public class Car {
 	}
 	Car(int gasLevel){ //error
 		gasoline = gasLevel;
-
+```
 같은 서명을 가진 두 개의 메서드( 생성자 포함 )를 사용할 수 없다.
-
+```java
 public Car(String name) {
 	this(name, 0, 0, false);
 }
@@ -45,6 +46,6 @@ public Car(String name, int speed, int fuel, boolean running) {
 	setGasoline(fuel);
 	setEngineState(running);
 }
-
+```
 위와 같이 생성자를 사용할 수 있음.
  
