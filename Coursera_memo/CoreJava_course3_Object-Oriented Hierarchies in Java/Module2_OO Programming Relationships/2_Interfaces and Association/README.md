@@ -17,9 +17,9 @@ public 용으로 만들어진 메서드는 처음에는 오로지 *인터페이�
 인터페이스를 먼저 정의하고, **그 후에** 클래스를 개발한다.
 대부분의 경우 참조 유형이 들어갈 왼쪽에 선언하는 것은 클래스가 아니라 *인터페이스*이다.
 
-> ex) 
-> ![Alt text](C:\Users\binggwa\JavaExercise\Coursera_memo\CoreJava_course3_Object-Oriented Hierarchies in Java\Module2_OO Programming Relationships\2_Interfaces and Association\2.인터페이스 및 연결_상속그림예제.png)
-> ![Alt text](C:\Users\binggwa\JavaExercise\Coursera_memo\CoreJava_course3_Object-Oriented Hierarchies in Java\Module2_OO Programming Relationships\2_Interfaces and Association\2.인터페이스 및 연결_상속그림예제2.png)
+> ex)
+![ex1](C:\Users\binggwa\JavaExercise\Coursera_memo\CoreJava_course3_Object-Oriented Hierarchies in Java\Module2_OO Programming Relationships\2_Interfaces and Association\2.인터페이스 및 연결_상속그림예제.png)
+![ex2](C:\Users\binggwa\JavaExercise\Coursera_memo\CoreJava_course3_Object-Oriented Hierarchies in Java\Module2_OO Programming Relationships\2_Interfaces and Association\2.인터페이스 및 연결_상속그림예제2.png)
 > transport 예제를 통해 학습.
 > CargoVan와 SUV 클래스를 추가하고, 둘다 cargo를 운반할 수 있다.
 > 여기에, SportsCar와 SUV를 컨버터블로 만들고자 함. 
